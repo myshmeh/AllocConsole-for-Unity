@@ -3,7 +3,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEditor;
-using System.Reflection;
+//using System.Reflection;
 
 
 namespace Assets.Scripts.Debugs
@@ -23,7 +23,7 @@ namespace Assets.Scripts.Debugs
             Application.logMessageReceivedThreaded += (condition, stackTrace, type) => Console.WriteLine(condition + " " + stackTrace);
         }
 
-        //clear allocconsole
+        //clear all the texts in allocconsole
         public static void ClearAllocConsole()
         {
             system("CLS");
